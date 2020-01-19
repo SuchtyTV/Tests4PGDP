@@ -35,7 +35,7 @@ public class Tests {
 		
 	}
 	
-	//@Test
+	@Test
 	public void testFactorialPerformance() {
 		long before = System.currentTimeMillis();
 		try {
