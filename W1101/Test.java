@@ -93,6 +93,12 @@ public class Tests {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		try {
+		    assertEquals(ParallelCompute.parallelReduceArray(new BigInteger[]{BigInteger.valueOf(42)}, BigInteger::multiply, 4), BigInteger.valueOf(42));
+		} catch(InterruptedException e) {
+		    System.out.println("Fehler: Reduce Operation sollte auch bei einem Element funktionieren");
+		}
 
 	}
 	
